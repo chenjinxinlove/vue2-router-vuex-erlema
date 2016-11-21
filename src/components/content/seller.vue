@@ -1,14 +1,15 @@
 <template>
-    <div class="header">
-      我是header
-    </div>
+  <div>
+    seller
+  </div>
 </template>
 <style lang="stylus" rel="stylesheet/stylus">
 </style>
-<script >
+<script>
   export default {
     data: function () {
        return { };
      }
   };
+
 </script>
