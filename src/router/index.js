@@ -9,15 +9,17 @@ import seller from '../components/content/seller';
 
 Vue.use(VueRouter);
 
-const routers = [
-  {path: '/goods', name: goods, components: goods},
-  {path: '/ratings', name: ratings, components: ratings},
-  {path: '/seller', name: seller, components: seller}
+const rt = [
+  {path: '/goods', name: goods, component: goods},
+  {path: '/ratings', name: ratings, component: ratings},
+  {path: '/seller', name: seller, component: seller}
 ];
 
 const router = new VueRouter({
-  routes: routers,
-  history: true
+  routes: rt,
+  history: true,
+  mode: 'history',
+  linkActiveClass: 'active'
 });
 
 export default router;
