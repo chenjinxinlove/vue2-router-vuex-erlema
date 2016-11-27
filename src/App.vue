@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="app">
-    <v-header></v-header>
+    <v-header :seller = "seller"></v-header>
     <div class="tab border-1px">
         <div class="tab-item"><router-link to="/goods">商品</router-link></div>
         <div class="tab-item"><router-link to="/ratings">评价 </router-link></div>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import header from './components/header/header';
+  import header from 'components/header/header';
   import axios from 'axios';
   const ERR_OK = 0;
   export default {
