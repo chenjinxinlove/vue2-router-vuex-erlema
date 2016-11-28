@@ -306,5 +306,6 @@
     components: {
       star
     }
+
   };
 </script>
