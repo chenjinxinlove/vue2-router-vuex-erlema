@@ -32,7 +32,6 @@
           const data = response.data;
           if (data.errno === ERR_OK) {
               this.seller = data.data;
-              console.log(this.seller);
             }
         });
     }
