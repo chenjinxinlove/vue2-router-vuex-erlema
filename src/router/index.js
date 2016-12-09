@@ -4,7 +4,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import goods from '../components/goods/goods';
-import ratings from '../components/content/ratings';
+import ratings from '../components/ratings/ratings';
 import seller from '../components/content/seller';
 
 Vue.use(VueRouter);
