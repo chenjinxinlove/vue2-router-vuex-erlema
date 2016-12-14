@@ -33,7 +33,7 @@
               <img :src="rating.avatar" 　width="28" height="28">
             </div>
             <div class="content">
-              <h1 class="name" v-show="needShow(rating.rateType,rating.text)">{{rating.username}}</h1>
+              <h1 class="name" >{{rating.username}}</h1>
               <div class="star-wrapper">
                 <star :size="24" score="rating.score"></star>
                 <span class="delivery" v-show="rating.deliveryTime">{{rating.deliveryTime}}</span>
@@ -64,7 +64,7 @@
     overflow hidden
     .overview
       display flex
-      padding 18px 0
+      padding 0 18px
       .overview-left
         flex 0 0 137px
         padding 6px 0
