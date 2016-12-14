@@ -1,11 +1,15 @@
 <template>
   <div id="app" class="app">
     <v-header :seller = "seller"></v-header>
-    <div class="tab border-1px">
-        <div class="tab-item"><router-link to="/goods">商品</router-link></div>
+
+      <div class="tab border-1px">
+        <div class="tab-item">
+          <router-link to="/goods">商品</router-link>
+        </div>
         <div class="tab-item"><router-link to="/ratings">评价</router-link></div>
         <div class="tab-item"><router-link to="/seller">商家</router-link></div>
-    </div>
+      </div>
+
     <router-view :seller="seller"></router-view>
   </div>
 </template>
@@ -13,16 +17,11 @@
 <script>
   import header from 'components/header/header';
   import axios from 'axios';
-  import {urlParse} from './common/js/urlParse';
   const ERR_OK = 0;
   export default {
     data() {
       return {
         seller: {
-          id: (() => {
-            let queryParam = urlParse();
-            return queryParam.id;
-          })()
         }
       };
     },
